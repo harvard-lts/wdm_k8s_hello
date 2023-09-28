@@ -1,0 +1,9 @@
+ENV=development
+APP_LOG_LEVEL=debug
+# Any example API url that will accept a GET request
+# https://github.com/public-apis/public-apis
+API_URL_EXTERNAL_EXAMPLE=https://jsonplaceholder.typicode.com/todos
+HEALTHCHECK_URL=http://localhost:23033/healthcheck
+
+# Required when serving HTTPS requests with a local self-signed certificate only
+#HTTPS_REJECT_UNAUTHORIZED=false

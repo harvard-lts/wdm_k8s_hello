@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  node_ci_template:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: node_ci_template
+    image: artifactory.huit.harvard.edu/lts/node_ci_template:latest
+    ports: 
+      - "8080:8080"
