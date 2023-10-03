@@ -1,11 +1,11 @@
 {
-  "name": "WdmK8sHello",
+  "name": "wdm-K8s-hello",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
-    "devserverstart": "DEBUG=node-ci-template:* npm run devstart",
+    "devserverstart": "DEBUG=wdm-k8s-hello:* npm run devstart",
     "test": "./node_modules/.bin/jest",
     "test:watch": "./node_modules/.bin/jest --watchAll",
     "test:unit": "./node_modules/.bin/jest --testPathPattern=__tests__/unit",

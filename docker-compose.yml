@@ -1,10 +1,10 @@
 version: "3.7"
 services:
-  node_ci_template:
+  wdm_k8s_hello:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: node_ci_template
-    image: artifactory.huit.harvard.edu/lts/node_ci_template:latest
+    container_name: wdm_k8s_hello
+    image: artifactory.huit.harvard.edu/lts/wdm_k8s_hello:latest
     ports: 
       - "8080:8080"

@@ -7,4 +7,4 @@
 // default values: slackChannel = "lts-jenkins-notifications"
 
 def endpoints = []
-ltsBasicPipeline.call("node-ci-template", "NOSTACK", "nodir", "", endpoints, "") 
+ltsBasicPipeline.call("wdm-k8s-hello", "NOSTACK", "nodir", "", endpoints, "") 

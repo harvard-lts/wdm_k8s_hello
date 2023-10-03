@@ -1,15 +1,15 @@
 version: '3.7'
 services:
 
-  node-ci-template:
-    container_name: node-ci-template
+  wdm-k8s-hello:
+    container_name: wdm-k8s-hello
     build:
       context: ./
       dockerfile: Dockerfile
     env_file: .env
     command: npm run devserverstart
     volumes:
-      - './:/home/exampleadm'
-      - '/home/exampleadm/node_modules'
+      - './:/home/hellow'
+      - '/home/hellow/node_modules'
     ports:
       - "23033:8080"
